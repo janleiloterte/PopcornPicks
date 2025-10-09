@@ -12,9 +12,4 @@ A dynamic movie discovery website built with **React** and **Vite**, allowing us
 
 ## Tech Stack
 - **Frontend:** React, Vite, JavaScript, HTML, CSS  
-- **Backend:** Node.js  
-
-## Usage
-1. Clone the repository:  
-   ```bash
-   git clone <your-repo-url>
+- **Backend:** Node.js
