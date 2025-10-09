@@ -1,4 +1,4 @@
-# Movie Finder 🎬
+# PopcornPicks Movie Finder 🎬🍿
 
 A dynamic movie discovery website built with **React** and **Vite**, allowing users to search, organize, and track their favorite movies.  
 
