@@ -9,7 +9,7 @@ function Watched() {
     return (
         <div className="favourites-empty">
             <h2>No Watched  Yet</h2>
-            <p>Start adding to watched to appear here.</p>
+            <p>Start adding to Watched to appear here.</p>
         </div>
     );
     }

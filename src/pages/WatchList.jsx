@@ -9,7 +9,7 @@ function List() {
     return (
         <div className="favourites-empty">
             <h2>No Watch List Yet</h2>
-            <p>Start adding to watch list to appear here.</p>
+            <p>Start adding to Watch List to appear here.</p>
         </div>
     );
     }
