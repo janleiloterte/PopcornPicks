@@ -74,40 +74,45 @@ function Home() {
     return (
         <div className="home">
 
-            <h2>Pick the perfect movie</h2>
+            <div className="home-box">
 
-            <div className="home-search">
+                <h2>Pick the perfect movie</h2>
 
-                <form onSubmit={handleSearch} className="search-form">
-                    <input
-                        type="text"
-                        placeholder="Search for movies..."
-                        className="search-input"
-                        value={searchQuery}
-                        //When a change is made in the input box it will set the value to that on the text box
-                        onChange={(e) => setSearchQuery(e.target.value)}>
-                    </input>
+                <div className="search-box">
 
-                    <button
-                        type="submit"
-                        className="search-button">
-                        Search
-                    </button>
-                </form>
+                    <form onSubmit={handleSearch} className="search-form">
+                        <input
+                            type="text"
+                            placeholder="Search for movies..."
+                            className="search-input"
+                            value={searchQuery}
+                            //When a change is made in the input box it will set the value to that on the text box
+                            onChange={(e) => setSearchQuery(e.target.value)}>
+                        </input>
 
-                <form onSubmit={handleSurprise} className="surprise-form">
-                    <button
-                        type="submit"
-                        className="search-button">
-                        Surprise Me
-                    </button>
-                </form>
+                        <button
+                            type="submit"
+                            className="search-button">
+                            Search
+                        </button>
+                    </form>
+
+                    <form onSubmit={handleSurprise} className="surprise-form">
+                        <button
+                            type="submit"
+                            className="search-button">
+                            Surprise Me
+                        </button>
+                    </form>
+
+                </div>
 
             </div>
 
             {error && <div className="error-message">(error)</div>}
 
-            <p className="title">{title}</p>
+            <div className="movie-box">
+                <p className="title">{title}</p>
 
                 {loading ? (
                     <div className="loading">loading...</div>) : (
@@ -122,6 +127,8 @@ function Home() {
                     </div>
                 )}
             </div>
+
+        </div>
     )
 }
 

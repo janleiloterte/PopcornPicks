@@ -1,16 +1,31 @@
 .navbar {
-  z-index: 10;
+  box-sizing: border-box;
+  z-index: 1;
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+  background: linear-gradient(to right, rgb(200, 0, 0), rgb(100, 0, 0));
 }
 
-.navbar-brand {
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo-text {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
+}
+
+.logo-text:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.logo-image {
+  max-height: 2rem;
 }
 
 .navbar-links {
@@ -21,30 +36,17 @@
 .nav-link {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 2rem;
   transition: background-color 0.2s;
-  color: #ffffff;
+  color: white;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  color: white;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    padding: 1rem;
-  }
-
-  .navbar-brand {
-    font-size: 1.2rem;
-  }
-
-  .navbar-links {
-    gap: 1rem;
-  }
-
-  .nav-link {
-    padding: 0.5rem;
-  }
+.nav-link.active {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  color: white;
 }

@@ -1,4 +1,4 @@
-import "../css/Favourites.css"
+import "../css/List.css"
 import { useMovieContext } from "../contexts/MovieContext"
 import MovieCard from "../components/MovieCard"
 
@@ -15,7 +15,7 @@ function Favourites() {
     }
 
     return (
-            <div classNme="favourites">
+            <div className="favourites">
                 <h2>Your Favourites</h2>
                 <div className="movies-grid">
                     {favourites.map((movie) => (

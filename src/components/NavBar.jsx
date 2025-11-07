@@ -1,20 +1,30 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "../css/NavBar.css"
+import PopcornPicksLogo from "../assets/PopcornPicksLogo.png";
 
 function NavBar() {
     return (
         <nav className="navbar">
-            <div className="navbar-brand">
-                <Link to="/"className="navbar-brand">PopcornPicks</Link>
+
+            <div className="logo">
+                <img className="logo-image" src={PopcornPicksLogo} alt="PopcornPicks Logo" />
+                <NavLink to="/" className="logo-text">PopcornPicks</NavLink>
             </div>
 
             <div className="navbar-links">
-                <Link to="/" className="nav-link">Home</Link>
-                <Link to="/favourites" className="nav-link">Picks</Link>
-                <Link to="/watched" className="nav-link">Watched</Link>
-                <Link to="/watch-list" className="nav-link">Watch List</Link>
+                <NavLink to="/" end className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                    Home
+                </NavLink>
+                <NavLink to="/favourites" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                    Picks
+                </NavLink>
+                <NavLink to="/watched" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                    Watched
+                </NavLink>
+                <NavLink to="/watch-list" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                    Watch List
+                </NavLink>
             </div>
-
         </nav>
     )
 }

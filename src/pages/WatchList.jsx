@@ -1,3 +1,4 @@
+import "../css/List.css"
 import { useMovieContext } from "../contexts/MovieContext"
 import MovieCard from "../components/MovieCard"
 
@@ -14,7 +15,7 @@ function List() {
     }
 
     return (
-            <div classNme="favourites">
+            <div className="favourites">
                 <h2>Your Watch List</h2>
                 <div className="movies-grid">
                     {list.map((movie) => (
