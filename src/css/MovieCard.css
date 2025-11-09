@@ -65,13 +65,21 @@
   transition: background-color 0.2s;
 }
 
+.favourite-button:focus {
+  outline: none;
+}
+
 .favourite-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  border-color: rgba(255, 255, 255, 0.8);
+  outline: 1px solid white;
+}
+
+.favourite-button:active {
+  transform: scale(0.95);
 }
 
 .favourite-button.active {
-  color: #ff4757;
+  color: red;
 }
 
 .watched-button {
@@ -91,13 +99,21 @@
   transition: background-color 0.2s;
 }
 
+.watched-button:focus {
+  outline: none;
+}
+
 .watched-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  border-color: rgba(255, 255, 255, 0.8);
+  outline: 1px solid white;
+}
+
+.watched-button:active {
+  transform: scale(0.95);
 }
 
 .watched-button.active {
-  color: #ff4757;
+  color: red;
 }
 
 .list-button {
@@ -117,13 +133,21 @@
   transition: background-color 0.2s;
 }
 
+.list-button:focus {
+  outline: none;
+}
+
 .list-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  border-color: rgba(255, 255, 255, 0.8);
+  outline: 1px solid white;
+}
+
+.list-button:active {
+  transform: scale(0.95);
 }
 
 .list-button.active {
-  color: #ff4757;
+  color: red;
 }
 
 .movie-info {
