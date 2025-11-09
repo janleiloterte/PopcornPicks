@@ -41,9 +41,14 @@
   color: white;
 }
 
+.nav-link:active {
+  transform: scale(0.95);
+}
+
 .nav-link:hover {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
   color: white;
+  outline: 1px solid white;
 }
 
 .nav-link.active {

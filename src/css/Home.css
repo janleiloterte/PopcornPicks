@@ -85,10 +85,16 @@
   border: none;
 }
 
-.search-button:hover {
-  background: linear-gradient(to right, rgb(250, 0, 0), rgb(150, 0, 0));
+
+.search-button:active {
+  transform: scale(0.95);
 }
 
 .search-button:focus {
   outline: none;
+}
+
+.search-button:hover {
+  background: linear-gradient(to right, rgb(250, 0, 0), rgb(150, 0, 0));
+  outline: 1px solid white;
 }
